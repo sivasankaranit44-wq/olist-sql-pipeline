@@ -1,7 +1,7 @@
 from sqlalchemy import create_engine, text
 
-SERVER = "localhost\\SQLEXPRESS"
-DATABASE = "master"
+SERVER = "localhost\\SQLEXPRESS01"
+DATABASE = "olistdb"
 
 engine = create_engine(
     f"mssql+pyodbc://@{SERVER}/{DATABASE}"
