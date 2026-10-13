@@ -4,8 +4,7 @@ GO
 DROP TABLE IF EXISTS gold.fact_orders;
 GO
 
--- Grain: one row = one item in one delivered order
--- Payments are NOT joined here on purpose (fan-out would inflate SUM(price))
+
 SELECT i.order_id,
        i.order_item_id,
        o.customer_id,
